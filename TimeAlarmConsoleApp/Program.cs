@@ -28,7 +28,6 @@ namespace TimeAlarmConsoleApp
 
             timer.Start();
 
-            // Keep the console application running
             // This approach allows the timer to continue checking in the background
             Console.WriteLine("\nCurrent time: " + DateTime.Now.ToString("HH:mm:ss"));
             while (timer.Enabled)
@@ -57,7 +56,7 @@ namespace TimeAlarmConsoleApp
     {
         static void RingAlarm()
         {
-            Console.WriteLine("\n⏰⏰ ALARM RINGING! TIME'S UP! ⏰⏰");
+            Console.WriteLine("\nTarget time reached!!");
         }
 
         static void Main(string[] args)
@@ -74,7 +73,7 @@ namespace TimeAlarmConsoleApp
             }
             else
             {
-                Console.WriteLine("❌ Invalid time format. Please use HH:MM:SS format.");
+                Console.WriteLine("Invalid time format. Please use HH:MM:SS format.");
             }
 
             Console.WriteLine("\nPress any key to exit...");
