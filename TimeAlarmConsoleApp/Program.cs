@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Timers;
 
 namespace TimeAlarmConsoleApp
@@ -56,7 +56,7 @@ namespace TimeAlarmConsoleApp
     {
         static void RingAlarm()
         {
-            Console.WriteLine("\nTarget time reached!!");
+            Console.WriteLine("\n⏰⏰ ALARM RINGING! TIME'S UP! ⏰⏰");
         }
 
         static void Main(string[] args)
@@ -73,7 +73,7 @@ namespace TimeAlarmConsoleApp
             }
             else
             {
-                Console.WriteLine("Invalid time format. Please use HH:MM:SS format.");
+                Console.WriteLine("❌ Invalid time format. Please use HH:MM:SS format.");
             }
 
             Console.WriteLine("\nPress any key to exit...");
